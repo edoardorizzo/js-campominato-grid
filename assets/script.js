@@ -30,13 +30,9 @@ for (let i = 0; i < maxCellNumber; i++) {
 /**Ogni volta che cliccko su un quadrato la cella si colora di verde
  * seleziono la cella che ha la classe cell e active
  * sulla cella selezionata aggiungo un event listener
- * recupero l'elemento della dom che ho cliccato e associo il colore verde
+ * recupero l'elemento della dom che ho cliccato e associo il colore rosso
+ * al click su ogni cella, emetto un messaggio in console con il numero della cella cliccata.
  */
-
-/*const cellElm = document.querySelector('.cell.active');
-cellElm.addEventListener('click', function(){
-    this.classList.toggle('bg-green')
-})*/
 
 const cells = document.querySelectorAll('.cell');
 for (let i = 0; i < cells.length; i++) {
@@ -45,5 +41,6 @@ for (let i = 0; i < cells.length; i++) {
 
     thisCell.addEventListener('click', function(){
         this.classList.toggle('bg-red')
+        console.log(thisCell);
     })
 }
