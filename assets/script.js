@@ -1,4 +1,19 @@
-/**generare una griglia di 64 celle
+/**
+ * Al click sul pulsante start game generare una griglia di gioco
+ */
+const mainCont = document.querySelector('.main_container')
+const startGame = document.querySelector('.start_game');
+const resetGame = document.querySelector('.reset')
+
+startGame.addEventListener('click', function(){
+    mainCont.classList.remove('d-none')
+})
+
+resetGame.addEventListener('click', function(){
+    mainCont.classList.add('d-none')
+})
+
+/**generare una griglia di 100 celle
  * selezioniamo il nodo della dom in cui inserire le 64 celle
  * ciclo n volte per generare le celle
  * rigenerare il markup
