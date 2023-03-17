@@ -14,19 +14,19 @@ body{
 }
 
 header{
-    height: 80px;
+    height: 88px;
     margin: auto;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 button{
     margin: 1rem;
 }
 
-.start_game{
+.primary_btn{
     background-color: red;
     width: 100px;
     height: 50px;
@@ -35,7 +35,7 @@ button{
     border-radius: 8px;
 }
 
-.reset{
+.secondary_btn{
     background-color: rgb(255, 255, 255);
     width: 100px;
     height: 50px;
@@ -43,6 +43,17 @@ button{
     color: rgb(255, 0, 0);
     border-radius: 8px;
 }
+
+select{
+    background-color: white;
+    border: none;
+    color: red;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
 
 .container{
     display: flex;
