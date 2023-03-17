@@ -54,11 +54,11 @@ button{
 }
 
 .cell{
-    width: calc(100% / 8);
+    width: calc(100% / 10);
     aspect-ratio: 1;
     border: 1px solid black;
 }
 
-.bg-green{
-    background-color: lightblue;
+.bg-red{
+    background-color: red;
 }

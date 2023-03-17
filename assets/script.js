@@ -22,7 +22,7 @@ resetGame.addEventListener('click', function(){
 const containerElm = document.querySelector('.container');
 const maxCellNumber = 100;
 
-for (let i = 0; i <= maxCellNumber; i++) {
+for (let i = 0; i < maxCellNumber; i++) {
     const cellMarkup = `<div class="cell"></div>`;
     containerElm.innerHTML += cellMarkup;
 }
@@ -44,6 +44,6 @@ for (let i = 0; i < cells.length; i++) {
     console.log(thisCell);
 
     thisCell.addEventListener('click', function(){
-        this.classList.toggle('bg-green')
+        this.classList.toggle('bg-red')
     })
 }
