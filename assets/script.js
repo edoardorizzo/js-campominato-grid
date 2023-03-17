@@ -23,7 +23,7 @@ const containerElm = document.querySelector('.container');
 const maxCellNumber = 100;
 
 for (let i = 0; i < maxCellNumber; i++) {
-    const cellMarkup = `<div class="cell"></div>`;
+    const cellMarkup = `<div class="cell">${i + 1}</div>`;
     containerElm.innerHTML += cellMarkup;
 }
 
